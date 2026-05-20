@@ -1,0 +1,133 @@
+/* Pour avoir des polices */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* En-tête */
+.en-tete {
+    background-color: rgb(170, 196, 252); /* Ton bleu ciel actuel */
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h1.grand-titre {
+    color: white;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Accordeons */
+.accordeon {
+    margin-bottom: 10px; /* Petit espace entre les blocs */
+    border: 0.9px solid #2a0f8a;
+}
+
+.accordeon-en-tete {
+    background-color: #f8f9fa;
+    padding: 30px 20px 10px 20px;
+    text-align: center;
+    border: 0.5px solid #d8d8d8;
+}
+
+/* Boutons déplier / replier */
+.acc-btn {
+    background: #2a0f8a;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    transition: all 0.3s ease;
+}
+
+.acc-btn:hover {
+    background: #4119c1;
+    transform: scale(1.15);
+}
+
+.titre-accordeon {
+    color: #424246;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Panneaux */
+.panel {
+    display: none; 
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-block-end: 0;
+    margin-left: 10px;
+}
+
+.panel-content {
+    padding: 20px 0;
+    max-width: 100%;
+    margin: 15px; 
+}
+
+
+/* Intérieur des accordeons : cartes et textes */
+.production-flex {
+    display: flex;    
+    gap: 20px;           
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#map_ocs_gironde, #map_ch_na, #map_tc, .map-container {
+    flex: 3;
+    height: auto;
+    max-height: 80vh;
+    margin-left: 20px;
+    border: none;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+}
+
+.map-container img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.production-text {
+    flex: 1.7;
+    padding-right: 30px;
+    text-align: justify;
+}
+
+
+h3 {
+    margin-top: 0;
+    color: #2a0f8a;
+}
+
+p {
+    line-height: 1.6;
+}
