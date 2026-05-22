@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jules Hurpeau - SIG et cartographie</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+    <header class="en-tete">
+        <h1 class="grand-titre"> Jules Hurpeau - Cartographie et SIG</h1>
+    </header>
+
+<section class="accordeon">
+    <div class="accordeon-en-tete">
+        <h2 class="titre-accordeon">Qui suis-je ?</h2>
+        <button class="acc-btn open-btn"><i class="fas fa-chevron-down"></i></button>
+    </div>
+    <div class="panel">
+        <div class="panel-content">
+            <p>Passionné par les enjeux environnementaux, je me suis naturellement orienté vers des études de géographie en licence et en master. <br> <br>
+                En licence (Université Bordeaux Montaigne), j'ai été formé à l'aménagement du territoire (grands principes de l'urbanisme, fonctionnement des collectivités territoriales) et à la géographie physique (enjeux climatiques, ressources naturelles). <br>
+                Puis en master (Nantes Université), je me suis spécialisé en aménagement du littoral. J'ai pu développer mes compétences en cartographie et SIG, en connaissance des milieux littoraux, et aussi en gestion et culture du risque. <br><br>
+                J'ai effectué mon dernier semestre de master en stage au sein du groupe Mer, Énergies et Littoral (MEL) du Cerema Normandie-Centre. Mon objectif était d'étudier puis de cartographier l'évolution passée et future d'un estuaire complexe, appelé "havre" dans le département de la Manche.
+                Ce travail faisait partie de l'élaboration des Cartes Locales d'Exposition au Recul du Trait de Côte (CLERTC) pour une communauté de communes manchoise. <br>
+                J'ai ensuite poursuivi cette expérience avec le groupe MEL pendant neuf mois. Intégré à l'équipe projet, j'ai participé à l'étude des CLERTC cette fois sur l'ensemble du littoral intercommunal. J'ai par la suite été intégré à d'autres études portant sur le littoral. <br>
+                À l'issue de ce contrat, j'ai rejoint le Bureau des Risques Naturels et Technologiques (BRNT) de la DDTM de Seine-Maritime. Mon objectif était de mettre à jour deux PPRI de la Seine normande, sur le volet cartographique. Je pouvais apporter un appui sur des cartes de cavités souterraines plus ponctuellement. <br> <br>
+                De retour en Nouvelle-Aquitaine, je suis à la recherche de nouvelles opportunités dans les domaines de l'aménagement, des SIG, de l'environnement. <br>
+                Vous pouvez trouver ci-après des cartes que j'ai réalisées. D'autres arriveront quand elles seront prêtes !
+
+            </p>
+        </div>
+        <button class="acc-btn close-btn"><i class="fas fa-chevron-up"></i></button>
+    </div>
+</section>
+
+<section class="accordeon">
+    <div class="accordeon-en-tete">
+        <h2 class="titre-accordeon">Mes productions</h2>
+        <button class="acc-btn open-btn"><i class="fas fa-chevron-down"></i></button>
+    </div>
+    <div class="panel">
+        <div class="panel-content">
+            <div class="production-item">
+                <h2 class="theme-title">Environnement :</h2>
+                <div class="production-flex">
+                    <div id="map_ocs_gironde" class="map-container">
+                        <img src="data/map_ocs_gironde.png" title="Type d'occupation du sol majoritaire en Gironde" alt="Occupation du sol Gironde">
+                    </div>
+                <div class="production-text">
+                    <h3>Type d'occupation du sol majoritaire en Gironde</h3>
+                    <p>Cette carte s'inspire du travail d'un autre cartographe, Kevin Prieur : sa carte représentait le type d'occupation du sol majoritaire en Hérault. <br>
+                        <br>
+                        J'ai donc souhaité représenter le type d'occupation du sol majoritaire en Gironde. <br>
+                        Divisée avec des hexagones de 3 kilomètres de large, cette carte est à la fois synthétique et révélatrice des activités girondines : l'ouest du département est dominé par des conifères, plus particulièrement des pins maritimes. Cette culture du pin sert à la production de papier, à la menuiserie, à la construction. L'est du département est quand à lui dominé par l'agriculture, et plus particulièrement par la viticulture : les hexagones oranges témoignent de l'importante surface dédiée à la viticulture.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr style="margin:40px 0;border-top: 1px solid #eee;">
+
+        <div class="production-item">
+            <h2 class="theme-title">Santé :</h2>
+            <div class="production-flex">
+                <div id="map_ch_na" class="map-container">
+                    <img src="data/map_ch_isochrone.png" alt="Carte santé NA">
+                </div>
+                <div class="production-text"> 
+                    <h3>Durée d'un trajet en voiture pour rejoindre le centre hospitalier le plus proche en Nouvelle-Aquitaine</h3>
+                    <p>Cette carte en isochrone illustre la proximité (ou l'éloignement) des néo-aquitains avec le centre hospitalier le plus proche. <br>
+                    Si la majorité des habitants habite à moins d'une demie-heure de l'hôpital le plus proche, d'autres semblent plus isolés : c'est le cas des habitants du Médoc en Gironde, de la côte landaise, et du sud des Pyrénées-Atlantique.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <hr style="margin:40px 0;border-top: 1px solid #eee;">
+
+
+        <div class="production-item">
+            <h2 class="theme-title">Risques naturels :</h2>
+            <div class="production-flex">
+                <div id="map_tc" class="map-container">
+                    <img src="data\map_tc.png" alt="Carte tc na">
+                </div>
+                <div class="production-text">
+                    <h3>Évolution du trait de côte : exemple d'une plage de Nouvelle-Aquitaine</h3>
+                    <p>Les côtes françaises sont particulièrment exposées aux phénomènes d'érosion et de submersion. <br>
+                    Les côtes sableuses connaissent aussi des périodes d'accrétion (avancée du trait de côte vers la mer) :
+                     ainsi, le marqueur du trait de côte (ici, la limite de la végétation) peut évoluer d'une année à l'autre en fonction des aléas (tempêtes, marées). <br>
+                     La carte ci-contre illustre l'évolution d'une portion du littoral néo-aquitain. À partir d'images aériennes géoréférencées, nous pouvons tracer les traits de 
+                    côte des années 2000 à 2024. La distance entre deux traits de côte permet d'obtenir le rythme d'érosion, et peut servir à déterminer 
+                    sa position future. </p>
+                </div>
+            </div>
+        </div>
+        <button class="acc-btn close-btn"><i class="fas fa-chevron-up"></i></button>
+    </div>
+
+</section>
+
+
+<script>
+//
+const allBtns = document.querySelectorAll('.acc-btn');
+
+allBtns.forEach(btn => {
+    btn.onclick = function() {
+        const container = this.closest('.accordeon');
+        const panel = container.querySelector('.panel');
+        const openBtn = container.querySelector('.open-btn');
+            if (panel.style.display === "block") {
+            // FERMETURE
+            panel.style.display = "none";
+            if (openBtn) openBtn.style.display = "block";
+            } else {
+            // OUVERTURE
+            panel.style.display = "block";
+            if (openBtn) openBtn.style.display = "none";    
+            }
+        };
+    });
+</script>
+
+</body>
+</html>
