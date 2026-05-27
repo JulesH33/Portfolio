@@ -94,7 +94,7 @@ h1.grand-titre {
     justify-content: space-between;
 }
 
-#map_ocs_gironde, #map_ch_na, #map_tc, .map-container {
+.map-container {
     flex: 3;
     height: auto;
     max-height: 80vh;
@@ -116,7 +116,7 @@ h1.grand-titre {
     object-fit: contain;
 }
 
-.production-text {
+.description-carte {
     flex: 1.7;
     padding-right: 30px;
     text-align: justify;
@@ -124,7 +124,7 @@ h1.grand-titre {
 
 
 h3 {
-    margin-top: 20px;
+    margin-top: 0;
     color: #2a0f8a;
 }
 
