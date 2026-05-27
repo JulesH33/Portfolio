@@ -42,6 +42,7 @@
         <h2 class="titre-accordeon">Mes productions</h2>
         <button class="acc-btn open-btn"><i class="fas fa-chevron-down"></i></button>
     </div>
+
     <div class="panel">
         <div class="panel-content">
             <div class="production-item">
@@ -50,57 +51,74 @@
                     <div id="map_ocs_gironde" class="map-container">
                         <img src="data/map_ocs_gironde.png" title="Type d'occupation du sol majoritaire en Gironde" alt="Occupation du sol Gironde">
                     </div>
-                <div class="production-text">
-                    <h3>Type d'occupation du sol majoritaire en Gironde</h3>
-                    <p>Cette carte s'inspire du travail d'un autre cartographe, Kevin Prieur : sa carte représentait le type d'occupation du sol majoritaire en Hérault. <br>
-                        <br>
-                        J'ai donc souhaité représenter le type d'occupation du sol majoritaire en Gironde. <br>
-                        Divisée avec des hexagones de 3 kilomètres de large, cette carte est à la fois synthétique et révélatrice des activités girondines : l'ouest du département est dominé par des conifères, plus particulièrement des pins maritimes. Cette culture du pin sert à la production de papier, à la menuiserie, à la construction. L'est du département est quand à lui dominé par l'agriculture, et plus particulièrement par la viticulture : les hexagones oranges témoignent de l'importante surface dédiée à la viticulture.
-                    </p>
+                    <div class="description-carte">
+                        <h3>Type d'occupation du sol majoritaire en Gironde</h3>
+                            <p>Cette carte s'inspire du travail d'un autre cartographe, Kevin Prieur : sa carte représentait le type d'occupation du sol majoritaire en Hérault. <br>
+                            <br>
+                            J'ai donc souhaité représenter le type d'occupation du sol majoritaire en Gironde. <br>
+                            Divisée avec des hexagones de 3 kilomètres de large, cette carte est à la fois synthétique et révélatrice des activités girondines : l'ouest du département est dominé par des conifères, plus particulièrement des pins maritimes. Cette culture du pin sert à la production de papier, à la menuiserie, à la construction. L'est du département est quand à lui dominé par l'agriculture, et plus particulièrement par la viticulture : les hexagones oranges témoignent de l'importante surface dédiée à la viticulture.
+                            </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <hr style="margin:40px 0;border-top: 1px solid #eee;">
+            <hr style="margin:40px 0;border-top: 1px solid #eee;">
 
-        <div class="production-item">
-            <h2 class="theme-title">Santé :</h2>
-            <div class="production-flex">
-                <div id="map_ch_na" class="map-container">
-                    <img src="data/map_ch_isochrone.png" alt="Carte santé NA">
-                </div>
-                <div class="production-text"> 
-                    <h3>Durée d'un trajet en voiture pour rejoindre le centre hospitalier le plus proche en Nouvelle-Aquitaine</h3>
-                    <p>Cette carte en isochrone illustre la proximité (ou l'éloignement) des néo-aquitains avec le centre hospitalier le plus proche. <br>
-                    Si la majorité des habitants habite à moins d'une demie-heure de l'hôpital le plus proche, d'autres semblent plus isolés : c'est le cas des habitants du Médoc en Gironde, de la côte landaise, et du sud des Pyrénées-Atlantique.
-                    </p>
+            <div class="production-item">
+                <h2 class="theme-title">Santé :</h2>
+                <div class="production-flex">
+                    <div id="map_ch_na" class="map-container">
+                        <img src="data/map_ch_isochrone.png" alt="Carte santé NA">
+                    </div>
+                    <div class="description-carte"> 
+                        <h3>Durée d'un trajet en voiture pour rejoindre le centre hospitalier le plus proche en Nouvelle-Aquitaine</h3>
+                        <p>Cette carte en isochrone illustre la proximité (ou l'éloignement) des néo-aquitains avec le centre hospitalier le plus proche. <br>
+                        Si la majorité des habitants habite à moins d'une demie-heure de l'hôpital le plus proche, d'autres semblent plus isolés : c'est le cas des habitants du Médoc en Gironde, de la côte landaise, et du sud des Pyrénées-Atlantique.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <hr style="margin:40px 0;border-top: 1px solid #eee;">
+            <hr style="margin:40px 0;border-top: 1px solid #eee;">
 
 
-        <div class="production-item">
-            <h2 class="theme-title">Risques naturels :</h2>
-            <div class="production-flex">
-                <div id="map_tc" class="map-container">
-                    <img src="data\map_tc.png" alt="Carte tc na">
+            <div class="production-item">
+                <h2 class="theme-title">Risques naturels :</h2>
+                <div class="production-flex">
+                    <div id="map_tc" class="map-container">
+                        <img src="data/map_tc.png" alt="Carte tc na">
+                    </div>
+                    <div class="description-carte">
+                        <h3>Évolution du trait de côte : exemple d'une plage de Nouvelle-Aquitaine</h3>
+                        <p>Les côtes françaises sont particulièrment exposées aux phénomènes d'érosion et de submersion. <br>
+                        Les côtes sableuses connaissent aussi des périodes d'accrétion (avancée du trait de côte vers la mer) :
+                        ainsi, le marqueur du trait de côte (ici, la limite de la végétation) peut évoluer d'une année à l'autre en fonction des aléas (tempêtes, marées). <br>
+                        La carte ci-contre illustre l'évolution d'une portion du littoral néo-aquitain. À partir d'images aériennes géoréférencées, nous pouvons tracer les traits de 
+                        côte des années 2000 à 2024. La distance entre deux traits de côte permet d'obtenir le rythme d'érosion, et peut servir à déterminer 
+                        sa position future. </p>
+                    </div>
                 </div>
-                <div class="production-text">
-                    <h3>Évolution du trait de côte : exemple d'une plage de Nouvelle-Aquitaine</h3>
-                    <p>Les côtes françaises sont particulièrment exposées aux phénomènes d'érosion et de submersion. <br>
-                    Les côtes sableuses connaissent aussi des périodes d'accrétion (avancée du trait de côte vers la mer) :
-                     ainsi, le marqueur du trait de côte (ici, la limite de la végétation) peut évoluer d'une année à l'autre en fonction des aléas (tempêtes, marées). <br>
-                     La carte ci-contre illustre l'évolution d'une portion du littoral néo-aquitain. À partir d'images aériennes géoréférencées, nous pouvons tracer les traits de 
-                    côte des années 2000 à 2024. La distance entre deux traits de côte permet d'obtenir le rythme d'érosion, et peut servir à déterminer 
-                    sa position future. </p>
+            </div>
+            <hr style="margin:40px 0;border-top: 1px solid #eee;">
+
+            <div class="production-item">
+                <div class="production-flex">
+                    <div id="map_mnt" class="map-container">
+                        <img src="data/map_diff_mnt.png" alt="">
+                    </div>
+                    <div class="description-carte">
+                        <h3>Évolution topographique d'une dune entre 2022 et 2024</h3>
+                        <p>Cette analyse de deux MNT illustre l'évolution d'une dune de Nouvelle-Aquitaine, entre 2022 et 2024. <br>
+                        Ici, deux Modèles Numériques de Terrain ont été téléchargés, et découpés selon une emprise identique (A1 ; A2). Ensuite, la calculatrice raster m'a permis de soustraire ces deux MNT, afin d'obtenir la différence d'altitude pour chaque pixel d'un mètre (B). Ainsi, les pixels rouges représentent une érosion de la dune, tandis que les pixels bleus représentent un engraissement de la dune. Enfin, un graphique (C) permet de visualiser l'évolution selon un transect perpendiculaire au trait de côte : 
+                        nous remarquons que la dune a tendance à s'éroder légèrement, sauf en arrière, où elle connait un engraissement important (de l'ordre de 7m au niveau du transect, de l'ordre de 15m de part et d'autre). La forêt de pins à l'est retient le sable. <br>
+                        L'analyse de MNT peut-être préconisée à la suite d'une tempête, ou pour suivre l'évolution d'un estran (rocheux, sableux) sur un temps long.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
         <button class="acc-btn close-btn"><i class="fas fa-chevron-up"></i></button>
     </div>
-
 </section>
 
 
